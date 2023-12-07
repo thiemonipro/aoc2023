@@ -4,7 +4,7 @@ def score_card(wins: int):
     else:
         return 1 * pow(2, wins - 1)
 
-
+# TODO: we could try to modify the code and adding caching here to speed up the scoring
 def count_card_creation(card_winnings, number):
     total = 0
     created_cards = card_winnings.get(number, [])
